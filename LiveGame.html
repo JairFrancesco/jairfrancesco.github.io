@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="grid images_3_of_2">
                         	<div class="movie_image">
                                 <span class="movie_rating">5.0</span>
-                                <img src="images/canal5.png" class="img-responsive" alt=""/>
+                                <img src="images/lol.jpg" class="img-responsive" alt=""/>
                             </div>
                             <div class="movie_rate">
                             	<div class="rating_desc"><p>Tu calificación :</p></div>
@@ -93,9 +93,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="down_btn"><a class="btn1" href="#"><span> </span>Download</a></div>
                          </div>
                         <div class="clearfix"> </div>
-                        <p class="m_4">CANAL 5 Mexico, de Televisa, el pie de abajo muestra en rojo los Kbs consumidos al servidor,mientras que muestra en verde los Kbs consumidos de otro cliente, en consola se puede ver la consecución de peticiones y respuesta de los segmentos de video.</p>
+                        <p class="m_4">Live Game League of legends, canal extraido de twitch y retransmitido con ffmpeg en AWS, el pie de abajo muestra en rojo los Kbs consumidos al servidor,mientras que muestra en verde los Kbs consumidos de otro cliente, en consola se puede ver la consecución de peticiones y respuesta de los segmentos de video.</p>
                         <video id="player" class="video-js vjs-default-skin" height="360" width="640" controls=""> <!--controls preload="none">-->
-						    <source src="http://104.36.18.76/live/jair/index.m3u8" 
+						    <source src="http://52.38.144.179/live/jairgame/index.m3u8" 
 						    type="application/x-mpegURL" />
 						</video>
 						<div hidden="true" style="float:center"><canvas id="updating-chart" width="500" height="300"></canvas></div>
@@ -137,7 +137,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					            <div class="preview"><a href="#"><img src="images/4.jpg" class="img-responsive" alt=""></a></div>
 					            <div class="data">
 					                <div class="title">mr.dev  /  2 hours ago  /  <a href="#">reply</a></div>
-					                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. sMirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,</p>
+					                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,</p>
 					            </div>
 					           <div class="clearfix"></div>
 					        </li>
@@ -266,7 +266,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="./js/PeerLive.js"></script>
 <script>
 	videojs.options.flash.swf = './js/videojs/video-js.swf';
-	PeerLive({host:"peerjs.jairagne.ovh",port:"9000",key: 'peerjs',debug:3}); //My ip on AWS
+	PeerLive({host:"52.38.144.179",port:"9000",key: 'peerjs',debug:3}); //My ip on AWS
     var player = videojs('#player');
     player.play();
 
@@ -335,9 +335,3 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 </body>
 </html>
-
-<!--
-
-ffmpeg -re -i "http://b36642.cdn.telefonica.com/36642/ch07/3.m3u8" -c:v copy -c:a aac -ar 44100 -ab 128k -ac 2 -strict -2 -f flv "rtmp://104.36.18.76/live/jair" 
-
--->
